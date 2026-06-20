@@ -15,6 +15,13 @@ function updateProductName(index, newName) {
 updateProductName(1, "smartphone");
 console.log(products);
 
+function removeLastProduct() {
+  products.pop();
+}
+removeLastProduct();
+console.log(products);
+
+
 // Export the necessary parts for testing
 module.exports = {
   logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
